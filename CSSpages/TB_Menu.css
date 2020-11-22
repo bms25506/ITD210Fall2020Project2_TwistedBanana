@@ -1,0 +1,33 @@
+@charset "utf-8";
+
+/******** Header Styles ********/
+#menu-header
+{
+	position: relative;
+}
+#menu-title
+{
+	text-align: center;
+	color: #B76E79;
+	border: 5px double orange;
+	font-size: 45px;
+}
+
+
+/******** Body Styles *********/
+#menu-body
+{
+	box-sizing: border-box;
+	text-align: center;
+	width:60%;
+	margin: auto;
+}
+#smoothies > h2, #to-go > h2
+{
+	color: #B76E79;
+}
+#smoothies, #to-go 
+{
+	width: 90%;
+	margin: auto;
+}

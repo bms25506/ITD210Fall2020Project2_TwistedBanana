@@ -1,0 +1,12 @@
+body:not(section#menu-body), #foot
+{
+	
+}
+nav.navbar, div.menu-image, footer
+{
+	display:none;
+}
+hr
+{
+	color: black;
+}

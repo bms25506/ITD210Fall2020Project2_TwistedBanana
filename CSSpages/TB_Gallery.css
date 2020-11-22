@@ -1,0 +1,151 @@
+#gallery-title
+{
+	text-align: center;
+	color:#B76E79;
+	font-size: 45px;
+}
+#gallery-container
+{
+	display: flex;
+	flex-wrap: wrap;
+	width: 90%;
+	margin: auto;
+}
+#gallery-container > img
+{
+	flex: 25%;
+	padding: 15px;
+	position: relative;
+}
+
+
+/**** Carousel Styles ****/
+.item.active
+{
+	height: 400px;
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+
+
+a.left.carousel-control,
+a.right.carousel-control
+{
+	background-image: none;
+	
+}
+
+.glyphicon
+{
+	background-color: #B76E79;
+	opacity: 0.5;
+	
+}
+/**** Gallery and Modal Styles *****/
+
+.images {
+  
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;  
+}
+
+.images:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(250,250,250); /* Fallback color */
+  background-color: rgba(250,250,250,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Caption of Modal Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption {  
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0)} 
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 60px;
+  right: 50px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+  opacity:1.0;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+
+}
+@media only screen and (max-width: 800px)
+{
+	#gallery-container > img
+	{
+		flex: 50%;
+	}
+	
+}
+@media only screen and (max-width: 580px)
+{
+	#gallery-container > img
+	{
+		flex: 100%;
+		
+		
+	}
+}
