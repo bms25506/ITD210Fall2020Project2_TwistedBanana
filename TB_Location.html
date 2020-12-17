@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<link href="CSSpages/TB_Location.css" rel="stylesheet" />
+		
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<link href="CSSpages/TB_Base.css" rel="stylesheet" />
+		
+		
+	</head>
+	<body>
+		<nav class="navbar navbar-expand-lg navbar-light" >
+				<div class="container">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+						  <span class="sr-only">Toggle navigation</span>
+						  <span class="icon-bar"></span>
+						  <span class="icon-bar"></span>
+						  <span class="icon-bar"></span>
+						</button>
+						<a class="logo" href="TB_Home.html"><img src="Images/Twisted Banana NO BG.png" alt="Logo" ></img></a>
+					</div>
+					
+					<div class="navbar-collapse collapse">
+					
+						<ul class="nav navbar-nav">
+							<li><a href="TB_Home.html">Home</a></li>
+							<li><a href="TB_Menu.html">Menu</a></li>
+							<li><a href="TB_About.html">About</a></li>
+							<li><a href="TB_Gallery.html">Gallery</a></li>
+							<li class="active"><a href="TB_Location.html">Location</a></li>
+						</ul>
+					</div><!--/.nav-collapse -->
+				</div>
+		</nav>
+		<header>Locations</header>
+		<hr style="border-top: 5px double orange" width="80%">
+		<div id="loc-body">
+			<div class="column">
+				<a onclick="loadMap1()" class="places"><h2>Kingfield Dr.</h2></a>
+				<ul>
+					<li><b>Adress: </b>Kingsfield Dr, Virginia Beach, VA 23456 </li>
+					<li><b>Days/Times: </b>Saturdays/ 11AM-12PM </li>
+				</ul>
+				<a onclick="loadMap2()"class="places"><h2>Tidewater Community College in Virginia Beach</h2></a>
+				<ul>
+					<li><b>Adress: </b>1700 College Crescent, Virginia Beach, VA 23453 </li>
+					<li><b>Days/Times: </b>Saturdays/ 12:30PM-8PM </li>
+				</ul>
+				<a onclick="loadMap3()"class="places"><h2>Lynnhaven Mall</h2></a>
+				<ul>
+					<li><b>Adress: </b>701 Lynnhaven Pkwy, Virginia Beach, VA 23452 </li>
+					<li><b>Days/Times: </b>Sundays/ 11AM-8PM </li>
+				</ul>
+				<br>
+			</div>
+			<div class="column">
+				<div id="map"></div>
+				
+			</div>
+			<div class="column">
+				<iframe id="fb-page" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ffacebook&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="340" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+			</div>
+			
+			
+		</div>
+
+		<script>
+			function loadMap1()
+			{
+				document.getElementById("map").innerHTML= '<iframe class="maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1598.7972053246272!2d-76.05282439649844!3d36.73230099781956!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89bac0cdeace0eaf%3A0x8335e4b3399ec2f6!2sKingsfield%20Dr%2C%20Virginia%20Beach%2C%20VA%2023456!5e0!3m2!1sen!2sus!4v1608228601774!5m2!1sen!2sus" width="90%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>';
+			}
+			function loadMap2()
+			{
+				document.getElementById("map").innerHTML= '<iframe class="maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3195.353073854055!2d-76.10320858470462!3d36.78608417995155!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89babf9ad4143d8b%3A0x94752e6c50670145!2sTidewater%20Community%20College%20-%20Virginia%20Beach%20Campus!5e0!3m2!1sen!2sus!4v1608181929098!5m2!1sen!2sus" width="90%" height="450"  frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>';
+			}
+			function loadMap3()
+			{
+				document.getElementById("map").innerHTML= '<iframe class="maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3194.091482562958!2d-76.07321788470372!3d36.816327679945346!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89baeaa73d9dd2ad%3A0xbbd459934161887f!2sLynnhaven%20Mall!5e0!3m2!1sen!2sus!4v1608231274724!5m2!1sen!2sus" width="90%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>';
+			}
+		</script>
+		
+				
+		
+	</body>
+	<footer>
+		
+		<div id="foot" class="row">
+			<div id="fColumns" class="column" >
+				<h3>Quick Links:</h3>
+				<ul id="qLinks">
+					<li>
+						<a href="TB_Home.html">Home</a>
+					</li>
+					<li>
+						<a href="TB_Menu.html">Menu</a>
+					</li>
+					<li>
+						<a href="TB_About.html">About</a>
+					</li>
+					<li>
+						<a href="TB_Gallery.html">Gallery</a>
+					</li>
+					<li>
+						<a href="TB_Location.html">Location</a>
+					</li>
+				</ul>
+			</div>
+			<div id="fColumns" class="column" >
+				<h3>Hours:</h3>
+				<p>
+					Monday-Friday: CLOSED<br>
+					Saturday-Sunday: 11:00 A.M. - 8:00 P.M.
+				</p>
+			</div>
+			<div id="fColumns" class="column" >
+				<h3>Contact Info:</h3>
+				<p>
+					Phone Number: 
+					<br>
+					Email: 
+					<br>
+					See our Social Media Pages:
+					<br>
+					<a class="icons" href="https://www.facebook.com/"><img  src="Images/f_logo_RGB-Blue_58.png"></img></a>
+					<a class="icons" href="https://www.twitter.com/"><img  src="Images/Twitter_Social_Icon_Circle_Color.png"></img></a>
+					
+				</p>
+			</div>
+		</div>
+		
+		<hr>
+		<div id="copy">
+			&copy Twisted Banana
+		</div>
+	</footer>
+		
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<!-- Include all compiled plugins (below), or include individual files as needed -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+
+</html>
