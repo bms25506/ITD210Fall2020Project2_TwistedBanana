@@ -12,7 +12,11 @@
 	border: 5px double orange;
 	font-size: 45px;
 }
+#smoothies h3, #to-go h3
+{
+	color: #FAC14F;
 
+}
 
 /******** Body Styles *********/
 #menu-body
