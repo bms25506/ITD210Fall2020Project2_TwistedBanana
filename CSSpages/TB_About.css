@@ -1,0 +1,57 @@
+@charset "utf-8";
+
+/**** Header Styles ****/
+
+header
+{
+	text-align: center;
+	color:#B76E79;
+	font-size: 45px;
+}
+.columns h2
+{
+	color: #FAC14F;
+	text-align: center;
+}
+
+
+/**** Body Styles ****/
+
+.columns
+{
+	display: block;
+	float:left;
+	width:50%;
+	padding: 10px;
+	position:relative;
+	min-height: 320px;
+}
+#about-body:after, #about-business:after
+{
+	content: "";
+	display: table;
+	clear: both;
+}
+.columns img
+{
+	display: block;
+	align-items: center;
+	margin: auto;
+}
+.columns p
+{
+	display: block;
+	width: 90%;
+	margin: auto;
+}
+
+
+/**** Dynamic Styles ****/
+
+@media screen and (max-width: 815px) 
+{
+	.columns
+	{
+		width: 100%;
+	}
+}
